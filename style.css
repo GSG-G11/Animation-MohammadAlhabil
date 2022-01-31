@@ -85,3 +85,34 @@ body {
   border-radius: 0px;
   transform: scale(1.5) rotate(15deg);
 }
+
+.taskAnimation {
+  height: 700px;
+  margin-bottom: 50px;
+}
+
+.taskAnimation img {
+  animation: animateImg 3s ease-in-out infinite;
+}
+
+@keyframes animateImg {
+  0% {
+    opacity: 0;
+    transform: translate(450px, 130px);
+  }
+
+  25% {
+    opacity: 0.7;
+    transform: scale(1.2) translate(-300px, 0px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: scale(1.1);
+    border-radius: 50%;
+  }
+}
