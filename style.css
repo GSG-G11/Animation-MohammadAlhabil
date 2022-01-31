@@ -36,8 +36,8 @@ body {
 .btn {
   position: absolute;
   left: 50%;
-  top:50%;
-  transform: translate(-50%,-10%);
+  top: 50%;
+  transform: translate(-50%, -10%);
   border: 2px solid #4682B4;
   border-radius: 8px;
   width: 200px;
@@ -53,5 +53,35 @@ body {
   width: 250px;
   color: white;
   background-color: #4682B4;
-  box-shadow: 8px 8px 24px rgba(70,130,180,0.3);
+  box-shadow: 8px 8px 24px rgba(70, 130, 180, 0.3);
+}
+
+.card:nth-of-type(2) {
+  height: 500px;
+}
+
+.wrapBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.btnTransform {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background-color: #4682B4;
+  border: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 24px rgba(70, 130, 180, 0.3);
+  transition: all .5s ease-in-out;
+}
+
+.btnTransform:hover {
+  border-radius: 0px;
+  transform: scale(1.5) rotate(15deg);
 }
